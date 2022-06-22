@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: big-O-test
+Version: 1.0.0
+Summary: Librería para para comparar rendimiento entre dos algoritmos
+Home-page: https://github.com/StifhBarrage/big-O-test-library
+Author: Herless Stifh Barragán León
+Author-email: hbarraganl@unal.edu.co
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# big-O-test-library
+
