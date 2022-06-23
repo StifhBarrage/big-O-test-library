@@ -12,10 +12,8 @@ def big_o_compare(function1, function2, limit, min=100, max=100000, measures=10,
                         ALL_CLASSES[2].__name__,ALL_CLASSES[3].__name__,ALL_CLASSES[4].__name__,ALL_CLASSES[7].__name__]
     
     if big_o_complexity.index(str(type(best1).__name__)) < big_o_complexity.index(str(type(best2).__name__)):
-        print(f"El algoritmo con mayor rendimiento es {function1.__name__}\nSu rendimiento es {best2}")
+        print(f"El algoritmo con mayor rendimiento es {function1.__name__}\nSu rendimiento es {type(best1).__name__best2}")
     elif big_o_complexity.index(str(type(best1).__name__)) == big_o_complexity.index(str(type(best2).__name__)):
         print(f"Ambos algoritmos tiene desempeños similares. Sus rendimientos son {type(best1).__name__} y {type(best2).__name__}")
-    else:
+    elif big_o_complexity.index(str(type(best1).__name__)) > big_o_complexity.index(str(type(best2).__name__)):
         print(f"El algoritmo con mayor rendimiento es {function2.__name__} \nSu rendimiento es {type(best2).__name__}")
-
-

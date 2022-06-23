@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '1.0.6'
+VERSION = '1.0.7'
 PACKAGE_NAME = 'big_O_test' 
 AUTHOR = 'Herless Stifh Barragán León'
 AUTHOR_EMAIL = 'hbarraganl@unal.edu.co'
