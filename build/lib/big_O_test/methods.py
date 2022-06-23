@@ -1,7 +1,7 @@
 import big_o
 from big_o.complexities import ALL_CLASSES
 import random
-def big_o_compare(function1, function2, limit, min=4, max=10, measures=3, repeats=1 ):
+def big_o_compare(function1, function2, limit, min=100, max=100000, measures=10, repeats=1 ):
     generator = lambda n: big_o.datagen.integers(n, 0, limit)
     best1, others1 = big_o.big_o(function1,generator,min_n=min, max_n=max, n_measures= measures,n_repeats=repeats)
 
@@ -17,3 +17,5 @@ def big_o_compare(function1, function2, limit, min=4, max=10, measures=3, repeat
         print(f"Ambos algoritmos tiene desempeños similares. Sus rendimientos son {type(best1).__name__} y {type(best2).__name__}")
     else:
         print(f"El algoritmo con mayor rendimiento es {function2.__name__} \nSu rendimiento es {type(best2).__name__}")
+
+
