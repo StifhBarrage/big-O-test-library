@@ -6,7 +6,6 @@ def big_o_compare(function1, function2, limit, min=100, max=100000, measures=10,
     best1, others1 = big_o.big_o(function1,generator,min_n=min, max_n=max, n_measures= measures,n_repeats=repeats)
 
     best2, others2 = big_o.big_o(function2,generator,min_n=min, max_n=max, n_measures= measures,  n_repeats=repeats)
-    print(best1, best2)
 
     big_o_complexity = [ALL_CLASSES[0].__name__, ALL_CLASSES[5].__name__,ALL_CLASSES[1].__name__,ALL_CLASSES[6].__name__,
                         ALL_CLASSES[2].__name__,ALL_CLASSES[3].__name__,ALL_CLASSES[4].__name__,ALL_CLASSES[7].__name__]
